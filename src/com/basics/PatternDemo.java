@@ -70,15 +70,59 @@ package com.basics;
 		**
 		*
 		
+		+++++1
+		++++1 2
+		+++1 2 3
+		++1 2 3 4
+		+1 2 3 4 5
+		
+		k: completely depends on i
+		
+		*  	 	1   1*2  2-1
+	   ***		3	2*2  4-1
+	  *****		5   3*2  6-1
+	   ***
+	    *
+	    
+	    1
+	   1 1
+	  1 2 1
+	 1 3 3 1
+	1 4 4 4 1
+		
+		2 to the power of 3
+		11.40
+		
+		
  */
 public class PatternDemo {
 public static void main(String[] args) {
-	for (int i = 5; i >=1; i--) {
-		char ch='A';
-		for (int j =5; j >=i; j--) {
-			System.out.print(ch++);
-		}
-		System.out.println();
-	}
+//	for (int i = 1; i <=3; i++) {
+//		for (int k = i; k<=3; k++) {
+//			System.out.print(" ");
+//		}
+//		for (int j =1; j <=i*2-1; j++) {
+//			System.out.print("*");
+//		}
+//		System.out.println();
+//	}
+//	for (int i = 2; i >=1; i--) {
+//		for (int k = i; k<=3; k++) {
+//			System.out.print(" ");
+//		}
+//		for (int j =i*2-1; j >=1; j--) {
+//			System.out.print("*");
+//		}
+//		System.out.println();
+//	}
+	
+	int a=2,b=4,power = 1;
+//	for (int i=1;i<=b;i++) {
+//		power=power*a;//8
+//		
+//	}
+
+	System.out.println(Math.pow(a, b));
+	
 }
 }
